@@ -9,6 +9,6 @@ def homepage(request):
     return render(request, "homepage.html", {'article': article})
 
 
-def detail(request, slug):
+def post(request, slug):
     articles = Author.objects.get(slug=slug)
-    return render(request,"article_detail.html", {'articles':articles})
+    return render(request, "article_detail.html", {'articles':articles})

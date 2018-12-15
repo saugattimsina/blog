@@ -6,7 +6,8 @@
 <div class="article">
     {%for articles in article%}
      <div class="articles">
-            <h2> <a href="#">{{articles.title}}</a> </h2>
+
+            <h2> <a href="{% url 'detail' slug=articles.slug%}">{{articles.title}}</a> </h2>
             <p>{{articles.body}}</p>
             <p>{{articles.date}}</p>
      <br>
