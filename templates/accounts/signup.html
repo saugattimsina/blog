@@ -1,0 +1,14 @@
+{% extends 'base_layout.html'%}
+
+
+{%block content%}
+
+<h1>signup page</h1>
+<form class="user-form" action="/accounts/signup.html" methord="POST" />
+{%csrf_token%}
+{{ form }}
+
+
+<input type="submit" value="Signup">
+
+{%endblock%}
